@@ -3,7 +3,7 @@ services:
   nginx:
     image: nginx:stable-alpine
     restart: always
-    container_name: nginx
+    container_name: nginx_laravel
     ports:
       - 8000:80
     volumes:
@@ -17,7 +17,7 @@ services:
 
   mysql: 
     image: mysql:5.7 
-    container_name: mysql
+    container_name: mysql_laravel
     restart: always
     ports: 
       - 33069:3306
@@ -37,7 +37,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: php
+    container_name: php_7_4
     volumes:
       - ./src:/var/www/html 
     ports:

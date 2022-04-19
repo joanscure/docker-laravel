@@ -8,12 +8,6 @@ To build the docker container
 docker-compose up -d
 ```
 
-## Usage
-
-In the `src` folder you must put the laravel project that you want the docker to run
-
-This folder is equivalent to the address `Localhost`
-
 ## Documentation
 
 In the `dockerfile` the line 2:
@@ -31,3 +25,11 @@ image: mysql:5.7
 ```
 
 You define the Mysql version you want to use in the container.
+
+## Usage
+
+In the `src` folder you must put the laravel project that you want the docker to run
+
+This folder is equivalent to the address `[localhost:8000](http://localhost:8000/)`
+
+![Untitled](doc/laravel_run.png)
